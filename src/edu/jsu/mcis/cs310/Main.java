@@ -17,7 +17,10 @@ public class Main {
     }
     
     public String reverse(String message) {
-        return message;
+        String reversed = "";
+        for(int i = message.length() - 1; i >= 0; i--){
+            reversed += message.charAt(i);
+        }
+        return reversed;
     }
-    
 }
